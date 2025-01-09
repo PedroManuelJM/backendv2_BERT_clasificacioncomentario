@@ -11,4 +11,5 @@ Como se observa en la imagen , el modelo se descarga de Hugging Face y se utiliz
 ![image](https://github.com/user-attachments/assets/d167414b-6513-4a21-ba1c-d6ba6cf4a0dc)
 
 
- 
+ Nota: 
+ Desplegarlo en railway hay problemas y no funciona , pero en local si , se podria utilizar otra infraestructura para subir el backend como Azure , etc.
