@@ -6,6 +6,9 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 import os
 from datetime import datetime
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 # Cargar variables del archivo .env
 load_dotenv()
@@ -24,6 +27,10 @@ CORS(app)
 # Etiquetas de las clases y puntajes
 CLASSES = ["Positivo", "Negativo", "Neutro", "Invalido"]
 PUNTAJES = {"Positivo": 5, "Negativo": 1, "Neutro": 3, "Invalido": 0}
+
+@app.route('/')
+def home():
+    return "Servidor funcionando", 200
 
 # Ruta para clasificar un comentario
 @app.route('/clasificar', methods=['POST'])
